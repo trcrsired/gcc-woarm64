@@ -10096,7 +10096,7 @@ $as_echo "$as_me: WARNING: --enable-host-shared required to build $language" >&2
               # Silently disable.
               add_this_lang=unsupported
               ;;
-	  esac
+	        esac
           ;;
         esac
 

@@ -2400,7 +2400,7 @@ directories, to avoid imposing the performance cost of
               # Silently disable.
               add_this_lang=unsupported
               ;;
-	  esac
+	        esac
           ;;
         esac
 

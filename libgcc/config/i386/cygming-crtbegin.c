@@ -134,9 +134,11 @@ __gcc_register_frame (void)
     }
   else
     {
-      // FIXME
-      // register_frame_fn = __register_frame_info;
-      // deregister_frame_fn = __deregister_frame_info;
+#if !defined(__aarch64__)
+      // TODO: FIXME
+      register_frame_fn = __register_frame_info;
+      deregister_frame_fn = __deregister_frame_info;
+#endif
     }
   if (register_frame_fn)
      register_frame_fn (__EH_FRAME_BEGIN__, &obj);

@@ -294,7 +294,11 @@ struct gtm_thread
   // Invoked from assembly language, thus the "asm" specifier on
   // the name, avoiding complex name mangling.
   static uint32_t begin_transaction(uint32_t, const gtm_jmpbuf *)
+<<<<<<< HEAD
 	__asm__(UPFX "GTM_begin_transaction") ITM_REGPARM ITM_SYSV;
+=======
+	__asm__(UPFX "GTM_begin_transaction") ITM_REGPARM;
+>>>>>>> upstream/master
   // In eh_cpp.cc
   void init_cpp_exceptions ();
   void revert_cpp_exceptions (gtm_transaction_cp *cp = 0);
